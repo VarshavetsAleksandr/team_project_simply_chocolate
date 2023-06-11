@@ -11,8 +11,93 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <header>
+      <div class="header-container container" id="home">
+        <nav class="navigation">
+          <a class="logo-link link" href="./index.html">
+            <span>SIMPLY CHOCOLATE</span>
+            <svg class="header-logo" width="21" height="21">
+              <use href="./img/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#">How it’s made?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#">Our products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#">Top sellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="#">Chocolate is loved</a>
+            </li>
+          </ul>
+          <ul class="social-list list">
+            <li class="social-item">
+              <a
+                class="social-link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram-icon"
+              >
+                <svg class="social-logo" width="24" height="24">
+                  <use href="./img/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter-icon"
+              >
+                <svg class="social-logo" width="24" height="24">
+                  <use href="./img/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mob-menu" width="28" height="28">
+            <use href="./img/icons.svg#mob-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <main></main>
+    <footer></footer>
+
+    <!-- Mob menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="mob-menu-close" width="28" height="28">
+          <use href="./img/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
   </body>
+  <script src="./JavaScript/mobile-menu.js"></script>
 </html>
